@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AndroFirebase</string>
+
+    <string-array name="list_dropdown">
+        <item>Utama</item>
+        <item>Pelengkap</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="list_dropdown_all">
+        <item>Semua</item>
+        <item>Utama</item>
+        <item>Pelengkap</item>
+        <item>Lainnya</item>
+    </string-array>
+</resources>
