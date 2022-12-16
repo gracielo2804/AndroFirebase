@@ -38,7 +38,7 @@ class AddCustomer : AppCompatActivity() {
                     binding.etCatatanCustomer.text.toString()
                 )
                 val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
-                db= FirebaseDatabase.getInstance("https://androfirebase-6b995-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference()
+                db= FirebaseDatabase.getInstance(resources.getString(R.string.firebaseurl)).getReference()
                 db.child("customer").child(timeStamp).child("nama").setValue(binding.etNamaCustomer.text.toString())
                 db.child("customer").child(timeStamp).child("jenis").setValue(binding.spJenisAddCus.selectedItem.toString())
                 db.child("customer").child(timeStamp).child("nomor").setValue(binding.etNomorCustomer.text.toString())

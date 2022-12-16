@@ -10,10 +10,10 @@ import com.example.androfirebase.databinding.LayoutListBinding
 class ListSupCusAdapter: RecyclerView.Adapter<ListSupCusAdapter.ViewHolder>() {
 
     private var listData = ArrayList<SupCus>()
-    fun refreshDataListKelas(listKelasKirim:ArrayList<SupCus>){
+    fun refreshData(listDataKirim:ArrayList<SupCus>){
 
         listData.clear()
-        listData.addAll(listKelasKirim)
+        listData.addAll(listDataKirim)
         notifyDataSetChanged()
     }
 
@@ -25,6 +25,8 @@ class ListSupCusAdapter: RecyclerView.Adapter<ListSupCusAdapter.ViewHolder>() {
             binding.txtEmail.text=data.email
             binding.txtJenis.text=data.jenisBarang
             binding.txtNoHp.text=data.nohp
+
+
         }
     }
 
@@ -38,6 +40,7 @@ class ListSupCusAdapter: RecyclerView.Adapter<ListSupCusAdapter.ViewHolder>() {
         } else {
             holder.view.setBackgroundColor(Color.parseColor("#EBF5FB"))
         }
+        holder.bind(listData[position])
     }
 
     override fun getItemCount(): Int = listData.size

@@ -13,4 +13,5 @@
         <item>Pelengkap</item>
         <item>Lainnya</item>
     </string-array>
+    <string name="firebaseurl">https://androfirebase-6b995-default-rtdb.asia-southeast1.firebasedatabase.app/</string>
 </resources>

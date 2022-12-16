@@ -3,6 +3,7 @@ package com.example.androfirebase
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.androfirebase.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,5 +24,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
             finish()
         }
+        Log.e("url",resources.getString(R.string.firebaseurl))
     }
 }
